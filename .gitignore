@@ -1,7 +1,0 @@
-### Node.JS ###
-node_modules
-yarn-error.log
-
-### IDE ###
-.idea
-.vscode

@@ -1,0 +1,12 @@
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\bin\Debug\7DTD Admin Control Panel.exe
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\bin\Debug\7DTD Admin Control Panel.pdb
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\obj\Debug\7DTD Admin Control Panel.csprojResolveAssemblyReference.cache
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\obj\Debug\_7DTD_Admin_Control_Panel.Properties.Resources.resources
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\obj\Debug\7DTD Admin Control Panel.csproj.GenerateResource.Cache
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\obj\Debug\7DTD Admin Control Panel.exe
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\obj\Debug\7DTD Admin Control Panel.pdb
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\obj\Debug\_7DTD_Admin_Control_Panel.MainForm.resources
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7DTD Admin Control Panel\7DTD Admin Control Panel\bin\Debug\7DTD Admin Control Panel.exe.config
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7dtd-acp\7DTD Admin Control Panel\bin\Debug\7DTD Admin Control Panel.exe.config
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7dtd-acp\7DTD Admin Control Panel\obj\Debug\7DTD Admin Control Panel.exe
+C:\Users\fathalfath30\Documents\Fathalfath30\C#\7dtd-acp\7DTD Admin Control Panel\obj\Debug\7DTD Admin Control Panel.pdb
