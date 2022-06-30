@@ -41,12 +41,17 @@
             this.toolStripMenuItem_Discord = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SupportUs = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.tabPage_PlayerList = new System.Windows.Forms.TabPage();
+            this.tabPage_Player = new System.Windows.Forms.TabPage();
             this.tabPage_ConsoleCommand = new System.Windows.Forms.TabPage();
-            this.tabControl_Main = new System.Windows.Forms.TabControl();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tabControl_Main = new System.Windows.Forms.TabControl();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.tabPage_Admin = new System.Windows.Forms.TabPage();
+            this.tabPage_Whitelist = new System.Windows.Forms.TabPage();
+            this.tabPage_BannedList = new System.Windows.Forms.TabPage();
+            this.toolStripMenuItem_NewSession = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabPage_ConsoleCommand.SuspendLayout();
             this.tabControl_Main.SuspendLayout();
@@ -67,6 +72,7 @@
             // toolStripMenuItem_File
             // 
             this.toolStripMenuItem_File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_NewSession,
             this.toolStripMenuItem_Exit});
             this.toolStripMenuItem_File.Name = "toolStripMenuItem_File";
             this.toolStripMenuItem_File.Size = new System.Drawing.Size(37, 20);
@@ -75,7 +81,7 @@
             // toolStripMenuItem_Exit
             // 
             this.toolStripMenuItem_Exit.Name = "toolStripMenuItem_Exit";
-            this.toolStripMenuItem_Exit.Size = new System.Drawing.Size(93, 22);
+            this.toolStripMenuItem_Exit.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem_Exit.Text = "Exit";
             // 
             // toolStripMenuItem_Tools
@@ -89,7 +95,7 @@
             // toolStripMenuItem_Setting
             // 
             this.toolStripMenuItem_Setting.Name = "toolStripMenuItem_Setting";
-            this.toolStripMenuItem_Setting.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem_Setting.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem_Setting.Text = "Setting";
             // 
             // toolStripMenuItem_Help
@@ -132,7 +138,7 @@
             // toolStripMenuItem_Discord
             // 
             this.toolStripMenuItem_Discord.Name = "toolStripMenuItem_Discord";
-            this.toolStripMenuItem_Discord.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem_Discord.Size = new System.Drawing.Size(114, 22);
             this.toolStripMenuItem_Discord.Text = "Discord";
             // 
             // toolStripMenuItem_SupportUs
@@ -149,15 +155,15 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // tabPage_PlayerList
+            // tabPage_Player
             // 
-            this.tabPage_PlayerList.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_PlayerList.Name = "tabPage_PlayerList";
-            this.tabPage_PlayerList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_PlayerList.Size = new System.Drawing.Size(1202, 572);
-            this.tabPage_PlayerList.TabIndex = 2;
-            this.tabPage_PlayerList.Text = "Player List";
-            this.tabPage_PlayerList.UseVisualStyleBackColor = true;
+            this.tabPage_Player.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Player.Name = "tabPage_Player";
+            this.tabPage_Player.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Player.Size = new System.Drawing.Size(908, 563);
+            this.tabPage_Player.TabIndex = 2;
+            this.tabPage_Player.Text = "Player";
+            this.tabPage_Player.UseVisualStyleBackColor = true;
             // 
             // tabPage_ConsoleCommand
             // 
@@ -167,24 +173,29 @@
             this.tabPage_ConsoleCommand.Location = new System.Drawing.Point(4, 22);
             this.tabPage_ConsoleCommand.Name = "tabPage_ConsoleCommand";
             this.tabPage_ConsoleCommand.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_ConsoleCommand.Size = new System.Drawing.Size(1202, 572);
+            this.tabPage_ConsoleCommand.Size = new System.Drawing.Size(908, 563);
             this.tabPage_ConsoleCommand.TabIndex = 0;
             this.tabPage_ConsoleCommand.Text = "Console Command";
             this.tabPage_ConsoleCommand.UseVisualStyleBackColor = true;
             // 
-            // tabControl_Main
+            // button1
             // 
-            this.tabControl_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(791, 533);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Send";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl_Main.Controls.Add(this.tabPage_ConsoleCommand);
-            this.tabControl_Main.Controls.Add(this.tabPage_PlayerList);
-            this.tabControl_Main.Location = new System.Drawing.Point(0, 27);
-            this.tabControl_Main.Multiline = true;
-            this.tabControl_Main.Name = "tabControl_Main";
-            this.tabControl_Main.SelectedIndex = 0;
-            this.tabControl_Main.Size = new System.Drawing.Size(1210, 598);
-            this.tabControl_Main.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(6, 535);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(779, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // listBox1
             // 
@@ -194,33 +205,72 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(6, 6);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1190, 524);
+            this.listBox1.Size = new System.Drawing.Size(896, 511);
             this.listBox1.TabIndex = 0;
             // 
-            // textBox1
+            // tabControl_Main
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabControl_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(6, 544);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1073, 20);
-            this.textBox1.TabIndex = 1;
+            this.tabControl_Main.Controls.Add(this.tabPage_ConsoleCommand);
+            this.tabControl_Main.Controls.Add(this.tabPage_Player);
+            this.tabControl_Main.Controls.Add(this.tabPage_Admin);
+            this.tabControl_Main.Controls.Add(this.tabPage_Whitelist);
+            this.tabControl_Main.Controls.Add(this.tabPage_BannedList);
+            this.tabControl_Main.Location = new System.Drawing.Point(294, 36);
+            this.tabControl_Main.Multiline = true;
+            this.tabControl_Main.Name = "tabControl_Main";
+            this.tabControl_Main.SelectedIndex = 0;
+            this.tabControl_Main.Size = new System.Drawing.Size(916, 589);
+            this.tabControl_Main.TabIndex = 1;
             // 
-            // button1
+            // treeView1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1085, 542);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Send";
-            this.button1.UseVisualStyleBackColor = true;
+            this.treeView1.Location = new System.Drawing.Point(12, 36);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(276, 589);
+            this.treeView1.TabIndex = 4;
+            // 
+            // tabPage_Admin
+            // 
+            this.tabPage_Admin.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Admin.Name = "tabPage_Admin";
+            this.tabPage_Admin.Size = new System.Drawing.Size(908, 563);
+            this.tabPage_Admin.TabIndex = 3;
+            this.tabPage_Admin.Text = "Admin";
+            this.tabPage_Admin.UseVisualStyleBackColor = true;
+            // 
+            // tabPage_Whitelist
+            // 
+            this.tabPage_Whitelist.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_Whitelist.Name = "tabPage_Whitelist";
+            this.tabPage_Whitelist.Size = new System.Drawing.Size(908, 563);
+            this.tabPage_Whitelist.TabIndex = 4;
+            this.tabPage_Whitelist.Text = "Whitelist";
+            this.tabPage_Whitelist.UseVisualStyleBackColor = true;
+            // 
+            // tabPage_BannedList
+            // 
+            this.tabPage_BannedList.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_BannedList.Name = "tabPage_BannedList";
+            this.tabPage_BannedList.Size = new System.Drawing.Size(908, 563);
+            this.tabPage_BannedList.TabIndex = 5;
+            this.tabPage_BannedList.Text = "Banned List";
+            this.tabPage_BannedList.UseVisualStyleBackColor = true;
+            // 
+            // toolStripMenuItem_NewSession
+            // 
+            this.toolStripMenuItem_NewSession.Name = "toolStripMenuItem_NewSession";
+            this.toolStripMenuItem_NewSession.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem_NewSession.Text = "New Session";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 650);
+            this.Controls.Add(this.treeView1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl_Main);
             this.Controls.Add(this.menuStrip1);
@@ -254,12 +304,17 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_SupportUs;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_Setting;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.TabPage tabPage_PlayerList;
+        private System.Windows.Forms.TabPage tabPage_Player;
         private System.Windows.Forms.TabPage tabPage_ConsoleCommand;
         private System.Windows.Forms.TabControl tabControl_Main;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TabPage tabPage_Admin;
+        private System.Windows.Forms.TabPage tabPage_Whitelist;
+        private System.Windows.Forms.TabPage tabPage_BannedList;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_NewSession;
     }
 }
 
